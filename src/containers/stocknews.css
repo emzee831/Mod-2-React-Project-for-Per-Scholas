@@ -1,0 +1,75 @@
+body {
+    background-color: whitesmoke;
+    background-image: url(https://filestore.community.support.microsoft.com/api/images/3b806816-cfbd-4777-8ce3-236d94ef2e7c?upload=true);
+}
+
+.StockSectionhome {
+    align-items: center;
+    border: 2px thin black;
+    border-style: groove;
+    justify-content: space-evenly;
+    padding: 20px;
+    display: inline-flex;
+    text-align: center;
+    justify-items: self-end;
+    position: relative;
+}
+
+
+.Newshome {
+    border: 1px thin black;
+    border-style: ridge;
+    justify-content: left;
+    padding: 10px;
+    justify-items: left;
+    display: list-item;
+    /* margin-left: auto;
+    margin-right: auto; */
+
+}
+
+.newsimage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+
+.newstitle {
+    text-align: center;
+    font: bolder italic;
+    color: black;
+    font-size: 30px;
+}
+
+.spacebetweennews {
+    padding: 20px;
+}
+
+.spacebetweenlinknews {
+    padding: 10px;
+}
+
+.linktoarticle {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+
+.articledescription {
+    font: bold 40px;
+    color: black;
+    text-justify: newspaper;
+    font-size: 25px;
+}
+
+
+.thirdinnerstockdiv {
+    display: inline-block;
+    align-content: center;
+    justify-content: space-around;
+    font-size: 25px;
+    padding: 30px;
+    right: 30px;
+}

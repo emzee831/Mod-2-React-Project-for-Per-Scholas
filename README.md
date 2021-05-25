@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+#Stock Market and Cyptocurrency app/blog using React and Redux
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

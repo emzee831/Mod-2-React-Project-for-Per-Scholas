@@ -1,0 +1,15 @@
+.pagenav {
+    font-size: 20px;
+    font: bold;
+    /* color: black; */
+}
+
+.home {
+    color: black;
+}
+
+.navlinks {
+    color: black;
+    text-align: center;
+    align-items: center;
+}
