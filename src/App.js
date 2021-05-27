@@ -15,7 +15,6 @@ function App() {
           <Route path="/" exact component = {ProductListing}/>
           <Route path="/Crypto" component = {CryptoListing}/>
           <Route path="/Bigchart" render={() => <Bigchart legendPosition="bottom"/>}/>
-          {/* <Route path="/test" component = {test}/> */}
         </Switch>
       </Router>
     </div>
@@ -23,3 +22,4 @@ function App() {
 }
 
 export default App;
+    
