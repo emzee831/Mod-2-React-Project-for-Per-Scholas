@@ -1,7 +1,8 @@
+import { TimeScale } from "chart.js";
 import React, { Component } from "react";
-// import Chart from "./Bigchartdisplay";
 import Plot from 'react-plotly.js';
 import '../containers/Bigchart.css'
+// import Searchfield from './SearchBar'
 
 class Stock extends Component {
     constructor(props){
@@ -9,9 +10,26 @@ class Stock extends Component {
         this.state = {
           stockChartXValues: [],
           stockChartYValues: [],
-          currentStock: "FB"
+          currentStock: "amd"
         }
         this.fetchStock = this.fetchStock.bind(this)
+        this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleStockname = this.handleStockname.bind(this);
+        this.handleStockChange = this.handleStockChange.bind(this);
+    }
+
+    handleStockname(event) {
+      this.setState({currentStock: event.target.value});
+  }
+
+    handleSubmit(event) {
+      event.preventDefault();
+      this.setState({ currentStock: event.target.value });
+    }
+    
+    handleStockChange(event) {
+      event.preventDefault();
+      this.fetchStock();
     }
 
     componentDidMount() {
@@ -62,8 +80,16 @@ class Stock extends Component {
     render() {
       return (
         <div>
-          {/* <Blank current={this.state.curruentStock}> */}
           <h1 id="stocknameheader">{this.state.currentStock}</h1>
+          <form onSubmit={this.handleStockChange}>
+            <div>
+              <label for="searchsymbol">Type ticker symbol</label>
+              <input id="searchsymbol" contentEditable="true" type="text" value={this.state.currentStock} name="text" onChange={this.handleStockname}/>
+            </div>
+            <div>
+              <input type="submit" value="Send" onChange={this.handleStockChange}/>
+            </div>
+          </form>
           {/* <Chart xValues={this.state.stockChartXValues}/>
           <Chart yValues={this.state.stockChartyValues}/> */}
           {/* <p>x-values: {this.state.stockChartXValues}</p>
@@ -80,6 +106,7 @@ class Stock extends Component {
             ]}
             layout={{width: 1900, height: 600, title: 'Stock chart'}}
           />
+          {/* <Searchfield searchbar={this.state.currentStock}/> */}
         </div>
       )
     }

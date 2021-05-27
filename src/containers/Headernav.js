@@ -8,7 +8,7 @@ const Headernav = () => {
             <nav>
               <Link to="/">
               <div className="home">            
-                <h2>Fake Stock/Crypto App</h2>
+                <h2>Stock/Crypto Blog</h2>
               </div>  
               </Link>
               <ul className="navlinks">

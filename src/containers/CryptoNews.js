@@ -2,15 +2,15 @@ import React from "react";
 import { useSelector } from "react-redux";
 
 
-const NewsComponent = ()=> {
-    const news = useSelector((state) => state.allNews.news);
-    console.log(news);
-    const renderList = news.map((news) => {
-    const {source, author, title, description, url, urlToImage, content} = news; // here list all the api parameters you want to render
+const CryptoNews = ()=> {
+    const cryptonews = useSelector((state) => state.allCryptonews.cryptonews);
+    console.log(cryptonews);
+    const renderList = cryptonews.map((cryptonews) => {
+    const {source, author, title, description, url, urlToImage, content} = cryptonews; // here list all the api parameters you want to render
         return (
             
 
-        <div className="Newshome"> 
+        <div className="cryptonewshome"> 
             <div>
                 <img className="newsimage" src={urlToImage} alt="image" width="200" height="200"/>
             </div>
@@ -27,4 +27,4 @@ const NewsComponent = ()=> {
 };
 //meta class are for listing json parameters from api calls
 // this is componenet is for listing individual items
-export default NewsComponent
+export default CryptoNews

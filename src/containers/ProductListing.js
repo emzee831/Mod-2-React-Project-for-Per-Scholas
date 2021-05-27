@@ -42,7 +42,7 @@ const ProductListing = ()=> {
     const fetchStocks = async ()=> {
 
         const response = await axios
-        .get("https://api.twelvedata.com/time_series?symbol=AAPL,FB,GOOG,SQ,TSLA&interval=1min&apikey=708c8cf825194910aa7b6c2a817b9283&outputsize=1")
+        .get("https://api.twelvedata.com/time_series?symbol=AAPL,FB,GOOG,SQ,TSLA&interval=1min&apikey=708c8cf825194910aa7b6c2a817b9283&outputsize=2")
         .catch((err) => {
             console.log("Err", err);
         });

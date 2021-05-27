@@ -73,3 +73,20 @@ body {
     padding: 30px;
     right: 30px;
 }
+
+
+
+
+
+
+.Cryptotickermain {
+    align-items: center;
+    border: 2px thin black;
+    border-style: groove;
+    justify-content: space-evenly;
+    padding: 20px;
+    display: inline-flex;
+    text-align: center;
+    justify-items: self-end;
+    position: relative;
+}

@@ -9,6 +9,16 @@ const initialState2 = {
     news:[],
 };
 
+const initialState3 = {
+    cryptonews:[],
+};
+
+const initialState4 = {
+    cryptosymbols:[],
+};
+
+
+
 
 export const productReducer = (state = initialState, { type, payload }) => {
     switch (type) {
@@ -28,14 +38,21 @@ export const newsReducer = (state = initialState2, { type, payload }) => {
     }
 };
 
-export const selectedProductReducer = (state={}, {type, payload}) => {
+export const cryptonewsReducer = (state = initialState3, { type, payload }) => {
     switch (type) {
-        case ActionTypes.SELECTED_PRODUCT:
-            return { ...state, ...payload };
-        case ActionTypes.REMOVE_SELECTED_PRODUCT:
-            return {};
+        case ActionTypes.SET_CRYPTONEWS:
+            return {...state, cryptonews:payload };
         default:
-            return state;
+        return state;
+    }
+};
+
+export const cryptosymbolsReducer = (state = initialState4, { type, payload }) => {
+    switch (type) {
+        case ActionTypes.SET_CRYPTOSYMBOL:
+            return {...state, cryptosymbols:payload };
+        default:
+        return state;
     }
 };
 

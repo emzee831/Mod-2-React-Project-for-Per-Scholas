@@ -15,17 +15,17 @@ export const setNews = (news) => {
     };
 };
 
-
-export const selectedProduct = (product) => {
+export const setCryptoNews = (cryptonews) => {
     return {
-        type: ActionTypes.SELECTED_PRODUCT,
-        payload: product,
+        type: ActionTypes.SET_CRYPTONEWS,
+        payload: cryptonews,
     };
 };
 
-export const RemoveSelectedProduct = () => {
+export const setCryptoSymbols = (cryptosymbols) => {
     return {
-        type: ActionTypes.REMOVE_SELECTED_PRODUCT,
+        type: ActionTypes.SET_CRYPTOSYMBOLS,
+        payload: cryptosymbols,
     };
 };
 

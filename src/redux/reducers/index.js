@@ -1,11 +1,12 @@
 import { combineReducers } from "redux";
-import { productReducer, selectedProductReducer, newsReducer } from "./productReducer";
+import { productReducer, newsReducer, cryptonewsReducer, cryptosymbolsReducer } from "./productReducer";
 
 
 const reducers = combineReducers({
     allProducts: productReducer,
     allNews: newsReducer,
-    product: selectedProductReducer,
+    allCryptonews: cryptonewsReducer,
+    allCryptosymbols: cryptosymbolsReducer,
 });
 
 export default reducers
