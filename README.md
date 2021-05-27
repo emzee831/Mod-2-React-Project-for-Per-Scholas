@@ -26,6 +26,7 @@ react-router-dom
 Redux
 Redux-dev tools-extension
 
+## About the app
 
 This project is intended for anyone interested in the stock market and cryptocurrency market. To run this application simply run the command npm start on your console and all the dependencies will run that is needed. The two APIs used for this project are newsapi.org and twelvedata.com. The first two pages display the current news in the stock market and cryptocurrency market, along with displaying some ticker symbols of some companies on the stock market, the price that is displayed on the page is based on when the API fetch was dispatched. Also, the first two pages are the only components that are using Redux to pass along the APIs data to react. The third page is a graph line chart using the Plotly Javascript library, you can enter the exact ticker symbol for a stock market company or cryptocurrency and the application will fetch the price information from the twelve data API. It displays the price for the last two years of the company you have entered in the search bar, you can also zoom into the graph for a more detailed look. 
 
